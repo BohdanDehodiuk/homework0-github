@@ -3,134 +3,68 @@
 }
 
 body {
-  margin: 0;
   font-family: sans-serif;
-  line-height: 1.5;
-  background-color: #edf2f7;
+  text-align: center;
+  background-color: #f9f9fd;
 }
 
-.page-header {
-  /*  Making header.page-header a Flex-container and aligning elements  */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #607d8b;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+h1 {
+  font-size: 24px;
 }
 
-.logo {
-  padding: 15px;
-  border-radius: 4px;
-  background-color: #ff5722;
-  text-decoration: none;
-  color: #fff;
-}
-
-.menu {
-  display: flex;
-  padding: 15px;
-  margin: 0;
-  list-style: none;
-  border-radius: 4px;
-  background-color: #2196f3;
-}
-
-.menu > .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.menu .link {
-  display: block;
-  padding: 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: black;
-  background-color: #fff;
-}
-
-.menu .link:hover,
-.menu .link:focus,
-.logo:hover,
-.logo:focus {
-  text-decoration: underline;
-}
-.page-header {
-  display: flex;
-}
-.page-header {
-  display: flex;
-  align-items: center;
-}
-.page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.card {
-  display: flex;
-  width: 640px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.card.flex-start-aligned {
-  align-items: flex-start;
-}
-
-.card > .content {
-  margin-left: 15px;
-}
 .container {
-  max-width: 1200px;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-set {
   display: flex;
-  /* Делаем Flex-контейнет многострочным */
-  flex-wrap: wrap;
-  /* Компенсируем маржины элементов */
-  margin-left: -10px;
-  margin-top: -10px;
-  padding: 0;
-  list-style: none;
+  justify-content: center;
 }
 
-.item {
-  padding: 10px;
-  /* Задаём всем элементам маржины слева и сверху */
-  margin-left: 10px;
-  margin-top: 10px;
-  /*  Задаём ширину элементов  */
-  flex-basis: calc((100% - 30px) / 3);
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 5px;
+
+  line-height: 150px;
+  font-size: 20px;
+  text-align: center;
+  user-select: none;
+
   background-color: #fff;
-  border-radius: 4px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  animation-name: changeBgColor;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
 }
 
-.item h2 {
-  margin-top: 0;
-  font-size: 20px;
+.box:nth-child(1) {
+  /*  Значение по умолчанию  */
+  animation-fill-mode: none;
 }
 
-.item p {
-  margin: 0;
+.box:nth-child(2) {
+  animation-fill-mode: forwards;
+}
+
+.box:nth-child(3) {
+  animation-fill-mode: backwards;
+}
+
+.box:nth-child(4) {
+  animation-fill-mode: both;
+}
+
+@keyframes changeBgColor {
+  0% {
+    background-color: teal;
+  }
+
+  50% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: deepskyblue;
+  }
 }
