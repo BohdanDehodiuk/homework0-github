@@ -2,9 +2,9 @@
   // width: 100%;
   background-color: $secondary-bcg-color;
 
-  // @media screen and (min-width: 320px) {
-  //   padding: 125px 20px 0 20px;
-  // }
+  //   @media screen and (min-width: 320px) {
+  //     padding: 125px 20px 0 20px;
+  //   }
 }
 
 .about__label {
@@ -19,6 +19,10 @@
   text-transform: uppercase;
 
   color: $date-font-color;
+
+  //   @media screen and (min-width: 320px) {
+  // //     padding: 125px 20px 0 20px;
+  // //   }
 }
 
 .about__title {
