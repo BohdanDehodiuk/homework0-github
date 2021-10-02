@@ -1,515 +1,379 @@
 "use strict";
 
-// const productName = "Droid";
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   // Change code below this line
 
-// const pricePerItem = 2000;
+//   if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   }
 
-
-// console.log(productName);
-
-// console.log(pricePerItem);
-
-// let productName = "Droid";
-// let pricePerItem = 2000;
-
-// // kljhkjbbb
-
-// productName = "Repair droid";
-
-// pricePerItem = 3500;
-
-// console.log(productName);
-
-// console.log(pricePerItem);
-
-// const topSpeed = 160;
-
-// let distance = 617.54;
-
-// let login = "mango935";
-
-// const isOnLine = true;
-
-// const isAdmin = false;
-
-// console.log(isAdmin);
-// const pricePerItem = 3500;
-// const orderedQuantity = 4;
-
-// // Change code below this line
-// const totalPrice = pricePerItem * orderedQuantity;
-
-// console.log(totalPrice);
-// const productName = "Droid";
-// const pricePerItem = 3500;
-// const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
-// console.log(message);
-
-// const pricePerDroid = 800;
-
-// const orderedQuantity = 6;
-
-// const deliveryFee = 50;
-
-// const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
-
-// const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
-
-// console.log(message);
-
-// function sayHi() {
-//     console.log("Hello, this is my first function!");
-// }
-
-// sayHi()
-
-// / Change code below this line
-// function add() {
-//   console.log();
+//   return "Access denied, wrong password!";
 //   // Change code above this line
 // }
 
-// const add = function (a, b, c) {
-//     const result = a + b + c;
-//     console.log(add)
-//     console.log("Addition result equals", result);
-// }
+// const res1 = checkPassword("mangohackzor");
+// console.log(res1);
 
-// add()
-// add(15, 27, 10);
-// add(10, 20, 30);
-// add(5, 10, 15);
+// const res2 = checkPassword("polyhax");
+// console.log(res2);
 
-// function add(a, b, c) {
+// const res3 = checkPassword("jqueryismyjam");
+// console.log(res3);
+
+// Pflfxf #3
+
+// function checkStorage(available, ordered) {
 //   // Change code below this line
-    
-//     console.log(add);
-//     const result = a + b + c;
-//     console.log(result);
-//   	return a + b + c;
+//   // let message;
 
-
-//   // Change code above this line
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   }
+  
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+  
+//   return "The order is accepted, our manager will contact you";
+  
 // }
 
-// add(2, 5, 8); // 15
+// const res1 = checkStorage(100, 50);
+// console.log(res1);
 
-// console.log(add(15, 27, 10));
-// console.log(add(10, 20, 30));
-// console.log(add(5, 10, 15));.
+// const res2 = checkStorage(100, 130);
+// console.log(res2);
 
-// function multiply(x, y, z) {
-//   console.log("Код до return выполняется как обычно");
+// const res3 = checkStorage(70, 0);
+// console.log(res3);
 
-//   // Возвращаем результат выражения умножения
-//   return x * y * z;
+// const res4 = checkStorage(200, 20);
+// console.log(res4);
 
-//   console.log("Этот лог никогда не выполнится, он стоит после return");
-// }
+// const res5 = checkStorage(200, 250);
+// console.log(res5);
 
-// // Результат работы функции можно сохранить в переменную
-// let result = multiply(2, 3, 5);
-// console.log(result); // 30
+// const res6 = checkStorage(150, 0);
+// console.log(res6);
 
-// result = multiply(4, 8, 12);
-// console.log(result); // 384
+// home - work #4
 
-// result = multiply(17, 6, 25);
-// console.log(result); // 2550
+// const fruits = ["apple", "plum", "pear", "orange"]
 
-// home work
+// home-work #5
+// const fruits = ["apple", "plum", "pear", "orange"]
 
-// unction add(a, b, c) {
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[3];
+
+// home-work #6
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+
+// home-work #7
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// const fruitsArrayLength = fruits.length;
+
+// home-work #8
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// const lastElementIndex = fruits.length - 1;
+// console.log(lastElementIndex);
+
+// const lastElement = fruits[lastElementIndex];
+// console.log(fruits[lastElementIndex]);
+
+// home-work #9
+
+// function getExtremeElements(array) {
 //   // Change code below this line
-// 	console.log(add);
-  
-//   	const result = a + b + c;
-//     console.log(result);
-  
-//   	return a + b + c;
-
-
-//   // Change code above this line
-// }
-
-// add(2, 5, 8); // 15
-
-// console.log(add(15, 27, 10));
-// console.log(add(10, 20, 30));
-// console.log(add(5, 10, 15));
-// function add(a, b, c) {
-//   // Change code below this line
-//   console.log(add);
-  
+//   const firstElement = array[0];
+//   const indexLastElement = array.length - 1;
+//   const lastElement = array[array.length - 1];
+//   const result = [firstElement, lastElement];
 //   return result;
 
-
-
 //   // Change code above this line
 // }
 
-// add(2, 5, 8); // 15
+// const res1 = getExtremeElements([1, 2, 3, 4, 5]);
+// console.log(res1);
 
-// console.log(add(15, 27, 10));
-// console.log(add(10, 20, 30));
-// console.log(add(5, 10, 15));
+// const res2 = getExtremeElements(["Earth", "Mars", "Venus"]);
+// console.log(res2);
 
-// function makeMessage (name, price) {
-//   // Change code below this line
-//     const productName = "name";
-//     const productPrice = "price";
-
-//     const message = `You picked ${productName}, price per item is ${productPrice} credits`;
-//     console.log(message);
-//   // Change code above this line
-//   return message;
-// };
-
-// makeMessage();
-
-// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-//   // Change code below this line
-//     const totalPrice = orderedQuantity * pricePerDroid + deliveryFee
-
-
-//   // Change code above this line
-//   return message;
-// }
-
-// function isValidPassword(password) {
-//   const SAVED_PASSWORD = 'jqueryismyjam';
-//   // Change code below this line
-//     const isMatch = isValidPassword === SAVED_PASSWORD;
-//     console.log(isMatch);
-
-//   // Change code above this line
-//   return isMatch;
-// }
-
-// let cost;
-// const subscription = "pro";
-
-// if (subscription === "pro") {
-//   cost = 100;
-// } else {
-//   cost = 0;
-// }
-
-// console.log(cost); // 100
-
-// let cost;
-// const subscription = "free";
-
-// if (subscription === "pro") {
-//   cost = 100;
-// } else {
-//   cost = 0;
-// }
-
-// console.log(cost); // 0
-
-// function checkAge(age) {
-//   let message;
-
-//   if (age >= 18) { // Change this line
-//     message = 'You are an adult';
-//   } else {
-//     message = 'You are a minor';
+// const res3 = getExtremeElements(["apple", "peach", "pear", "banana"]);
+// console.log(res3);
+// варыант 1
+// function filterArray(numbers, value) {
+//   const newArr = [];
+//   for (let i = 0; i <= numbers.length; i += 1) {
+//     if (numbers[i] >= value) {
+//       newArr.push(numbers[i]);
 //     }
-    
-//     console.log(message);
+//   }
+//   return newArr;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
 
-//   return message;
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   let filter = [];
+  
+// for (const number of numbers) {
+//     numbers += number;
+//     if (number > value) {
+//       filter.push(number);
+//     }
+//   }
+
+//   // console.log(filter);
+//   return filter;
 // }
 
-// checkAge(20)
-// checkAge(8)
-// checkAge(14)
-// checkAge(38)
+// home-work #23
+// function filterArray(numbers, value) {
+//   const newArr = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       newArr.push(numbers[i]);
+//     }
+//   }
+//   return newArr;
+// }
+// const res1 = filterArray([1, 2, 3, 4, 5], 3);
+// console.log(res1);
+
+// const res2 = filterArray([1, 2, 3, 4, 5], 4);
+// console.log(res2);
+
+// const res3 = filterArray([1, 2, 3, 4, 5], 5);
+// console.log(res3);
+
+// const res4 = filterArray([12, 24, 8, 41, 76], 38);
+// console.log(res4);
+
+// const res5 = filterArray([12, 24, 8, 41, 76], 20);
+// console.log(res5);
+
+
+// function filterArray(numbers, value) {
+//   const newArr = [];
+//   for (let i = 0; i <= numbers.length; i += 1) {
+//     if (numbers[i] >= value) {
+//       newArr.push(numbers[i]);
+//     }
+//   }
+//   return newArr;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// home-work #10
+
+// function splitMessage(message, delimeter) {
+//   let words;
+//   // Change code below this line
+//   words = message.split(delimeter);
+
+//   // Change code above this line
+//   return words;
+// }
+
+// const res1 = splitMessage("Mango hurries to the train", " ");
+// console.log(res1);
+
+// const res2 = splitMessage("Mango", "");
+// console.log(res2);
+
+// const res3 = splitMessage("best_for_week", "_");
+// console.log(res3);
+
+// home-work #11
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//    // Change code below this line
+//   const words = message.split(" ");
+//   console.log(words);
+
+//   const wordNumber = words.length;
+//   console.log(wordNumber);
+
+//   const totalPrice = wordNumber * pricePerWord;
+//   console.log(totalPrice);
+
+//   return totalPrice;
+
+
+
+//    // Change code above this line
+// }
+
+// const res1 = calculateEngravingPrice("JavaScript is in my blood", 10);
+// console.log(res1);
+
+// const res2 = calculateEngravingPrice("JavaScript is in my blood", 20);
+// console.log(res2);
+
+// const res3 = calculateEngravingPrice("Web-development is creative work", 40);
+// console.log(res3);
+
+// const res4 = calculateEngravingPrice("Web-development is creative work", 20);
+// console.log(res4);
+
+// home-work #12
+
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   // Change code below this line
+//   string = array.join(delimeter);
+
+
+
+//   // Change code above this line
+//   return string;
+// }
+
+// const res1 = makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ");
+// console.log(res1);
+
+// const res2 = makeStringFromArray(["M", "a", "n", "g", "o"], "");
+// console.log(res2);
+
+// const res3 = makeStringFromArray(["top", "picks", "for", "you"], "_");
+// console.log(res3);
+
+// home-work #13
+
+// function slugify(title) {
+//   // Change code below this line
+//   // let newSlug;
+
+//   // newSlug = title.join('-');
+//   // console.log(newSlug)
+//   // return slug.toLowerCase();
+
+//   // return title.tolowerCase().join("-");
+
+//   return title.split(" ").join("-").toLowerCase();
+
+//   // Change code above this line
+// }
+
+// const res1 = slugify("Arrays for begginers");
+// console.log(res1);
+
+// const res2 = slugify("English for developer");
+// console.log(res2);
+
+// const res3 = slugify("Ten secrets of JavaScript");
+// console.log(res3);
+
+// const res4 = slugify("How to become a JUNIOR developer in TWO WEEKS");
+// console.log(res4);
+
+// home-work #14
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// console.log(firstTwoEls);
+// const nonExtremeEls = fruits.slice(1, 4);
+// console.log(nonExtremeEls);
+// const lastThreeEls = fruits.slice(2);
+// console.log(lastThreeEls);
+
+// home-work#18
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Change code below this line
+// const totalPrice = pricePerDroid * orderedQuantity;
+//   const creditsLeft = customerCredits - totalPrice;
+//  if ( totalPrice > customerCredits){
+//  message = "Insufficient funds!";
+   
+//  } else {
+//    message = `You ordered ${orderedQuantity} droids, you have ${creditsLeft} credits left`;
+//  }
+//   // Change code above this line
+//   return message;
+// }
 
 // home-work #16
-// function checkStorage(available, ordered) {
-//   let message;
-//   // Change code below this line
-//       if (available >= ordered) { // Change this line
-//     message = "Order is processed, our manager will contact you.";
-//   } else {
-//     message = "Not enough goods in stock!";
-//     }    
-//     console.log(message);
-    
 
-//   // Change code above this line
-//   return message;
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+//   const newArrey = firstArray.concat(secondArray);
+//   // console.log(newArrey);
+
+//   if (newArrey.length > maxLength) {
+//     return newArrey.slice(0, maxLength);
+//   }
+
+//   return newArrey;
+
+
+
+//     // Change code above this line
 // }
+  
+// const res1 = makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
+// console.log(res1);
 
-// checkStorage(100, 50)
-// checkStorage(100, 130)
-// checkStorage(200, 50)
-// checkStorage(100, 50)
-// checkStorage(100, 50)
+// const res2 = makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
+// console.log(res2);
+
+// const res3 = makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
+// console.log(res3);
+
+// const res4 = makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2);
+// console.log(res4);
+
+// const res5 = makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4);
+// console.log(res5);
+
+// const res6 = makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0);
+// console.log(res6);
 
 // home-work #18
 
-// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-//     let message;
-//     const totalPrice = pricePerDroid * orderedQuantity;
+function calculateTotal(number) {
+ // Change code below this line
+  let total = 0;
 
-//     if (totalPrice <= customerCredits) {
-//         message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`;
-//     } else {
-//         message = "Insufficient funds!";
-//     }
+  for (let i = 0; i <= number; i += 1) {
+    total += i;
+    // console.log(total);
     
-//     console.log(message);
+  }
+  return total;
 
-//     return message;
-// }
 
-// makeTransaction(3000, 5, 23000)
-// makeTransaction(1000, 3, 15000)
-// makeTransaction(5000, 10, 8000)
-// makeTransaction(2000, 8, 10000)
-// makeTransaction(500, 10, 5000)
+  // Change code above this line
+}
 
-// home - work #20
+const res1 = calculateTotal(1);
+console.log(res1);
 
-// function checkStorage(available, ordered) {
-//   let message;
-//   // Change code below this line
-//     if (ordered === 0) {
-//         message = "There are no products in the order!";
-//     } else if (available < ordered) {
-//         message = "Your order is too large, there are not enough items in stock!";
-//     } else {
-//         message = "The order is accepted, our manager will contact you";
-//     }
+const res2 = calculateTotal(3);
+console.log(res2);
 
-//     console.log(message);
+const res3 = calculateTotal(7);
+console.log(res3);
 
-//   // Change code above this line
-//   return message;
-// }
+const res4 = calculateTotal(18);
+console.log(res4);
 
-// checkStorage(100, 50)
-// checkStorage(100, 130)
-// checkStorage(70, 0)
-// checkStorage(200, 20)
-// checkStorage(200, 250)
-// checkStorage(150, 0)
-
-// home-work #24
-
-// function getDiscount(totalSpent) {
-//   const BASE_DISCOUNT = 0;
-//   const BRONZE_DISCOUNT = 0.02;
-//   const SILVER_DISCOUNT = 0.05;
-//   const GOLD_DISCOUNT = 0.1;
-//   let discount;
-//   // Change code below this line
-//     if (totalSpent >= 50000) {
-//         discount = GOLD_DISCOUNT;
-//     } else if (totalSpent >= 20000 && totalSpent <= 49999) {
-//         discount = SILVER_DISCOUNT;
-//     } else if (totalSpent >= 5000 && totalSpent <= 19999) {
-//         discount = BRONZE_DISCOUNT;
-//     } else if (totalSpent <= 4999) {
-//         discount = BASE_DISCOUNT;
-//     }
-    
-//     console.log(discount);
-
-//   // Change code above this line
-//   return discount;
-// }
-
-// getDiscount(137000)
-// getDiscount(46900)
-// getDiscount(8250)
-// getDiscount(1300)
-// getDiscount(5000)
-// getDiscount(20000)
-// getDiscount(50000)
-
-// home - work #25
-
-// function checkStorage(available, ordered) {
-//   let message;
-// //   // Change code below this line
-
-// //   if (ordered > available) {
-// //     message = "Not enough goods in stock!";
-// //   } else {
-// //     message = "The order is accepted, our manager will contact you";
-// //     }
-
-//     let message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
-    
-//     console.log(message)
-
-//   // Change code above this line
-//   return message;
-// }
-
-// checkStorage(100, 50)
-// checkStorage(100, 130)
-// checkStorage(200, 20)
-// checkStorage(200, 150)
-// checkStorage(150, 180)
-
-// hohome-work #26
-
-// function checkPassword(password) {
-//   const ADMIN_PASSWORD = "jqueryismyjam";
-//   let message;
-//   // Change code below this line
-    
-//     message = ADMIN_PASSWORD === password ? "Access is allowed" : "Access denied, wrong password!";
-    
-//     console.log(message);
-
-//   // Change code above this line
-//   return message;
-// }
-
-// checkPassword("jqueryismyjam")
-// checkPassword("angul4r1sl1f3")
-// checkPassword("r3actsux")
-
-// home-work #28
-
-// function checkPassword(password) {
-//   const ADMIN_PASSWORD = "jqueryismyjam";
-//   let message;
-//   // Change code below this line
-
-// //   if (password === null) {
-// //     message = "Canceled by user!";
-// //   } else if (password === ADMIN_PASSWORD) {
-// //     message = "Welcome!";
-// //   } else {
-// //     message = "Access denied, wrong password!";
-// //     }
-
-//     switch (password) {
-//         case null:
-//             message = "Canceled by user!";
-//             break;
-        
-//         case ADMIN_PASSWORD:
-//             message = "Welcome!";
-//             break;
-        
-//         default:
-//             message = "Access denied, wrong password!";
-//     }
-    
-//     console.log(message);
-
-//   // Change code above this line
-//   return message;
-// }
-
-// checkPassword("mangohackzor")
-// checkPassword(null)
-// checkPassword("polyhax")
-// checkPassword("jqueryismyjam")
-
-// home-work #29
-
-// 
-
-// const productName = "Repair droid";
-
-// // Если в переменной хранится строка
-// console.log(productName[2]); // 12
-
-// home - work #31
-
-// const courseTopic = "JavaScript essentials";
-// // Change code below this line
-
-// const courseTopicLength = courseTopic.length;
-// const firstElement = courseTopic[0];
-// const lastElement = courseTopic[courseTopic.length - 1];
-
-// console.log(courseTopicLength);
-// console.log(firstElement);
-// console.log(lastElement);
-
-// Change code above this line
-
-// home - work #32
-
-// function getSubstring(string, length) {
-//     const substring = string.slice(string, length); // Change this line
-    
-//     console.log(substring)
-
-//   return substring;
-// }
-
-// getSubstring("Hello world", 3)
-// getSubstring("Hello world", 6)
-// getSubstring("Hello world", 8)
-// getSubstring("Hello world", 11)
-// getSubstring("Hello world", 0)
-
-// home - work #33
-
-// function formatMessage(message, maxLength) {
-//   let result;
-//   // Change code below this line
-//     if (message.length <= maxLength) {
-//         result = message;
-//     } else if (message.length > maxLength) {
-//         result = message.slice(message, maxLength) + "...";
-//     }
-//     console.log(result);
-
-//   /// Change code above this line
-//   return result;
-// }
-
-// formatMessage("Curabitur ligula sapien", 16)
-// formatMessage("Curabitur ligula sapien", 23)
-// formatMessage("Vestibulum facilisis purus nec", 20)
-// formatMessage("Vestibulum facilisis purus nec", 30)
-// formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)
-// formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)
-
-//  home-work #35
-
-// function checkForName(fullName, name) {
-//     const result = fullName.includes(name); // Change this line
-    
-//     console.log(result);
-//   return result;
-// }
-
-// checkForName("Egor Kolbasov", "Egor")
-// checkForName("Egor Kolbasov", "egor")
-// checkForName("Egor Kolbasov", "egOr")
-// checkForName("Egor Kolbasov", "Zhenya")
-// checkForName("Vadim Nekrasov", "Vadim")
-// checkForName("Vadim Nekrasov", "vadim")
-// checkForName("Vadim Nekrasov", "Dima")
-
-// home-work #36
-
-// function checkForSpam(message) {
-//   let result;
-//   // Change code below this line
-//     result = message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
-//     console.log(result);
-//   // Change code above this line
-//   return result;
-// }
-
-// checkForSpam("Latest technology news")
-// checkForSpam("JavaScript weekly newsletter")
-// checkForSpam("Get best sale offers now!")
-// checkForSpam("Amazing SalE, only tonight!")
-// checkForSpam("Trust me, this is not a spam message")
-// checkForSpam("Get rid of sPaM emails. Our book in on sale!")
-// checkForSpam("[SPAM] How to earn fast money?")
+const res5 = calculateTotal(24);
+console.log(res5);
