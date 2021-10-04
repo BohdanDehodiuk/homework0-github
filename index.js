@@ -418,7 +418,7 @@
 
 //   for (let i = 0; i < arrString.length; i += 1) {
 //     worldLength = arrString[1].length;
-//     console.log(worldLength);
+//     // console.log(worldLength);
 
 //     if (arrString[i].length > worldLength) {
 //       longestWord = arrString[i];
@@ -464,31 +464,209 @@
 // console.log(res3);
 
 // home-work #23
-function filterArray(numbers, value) {
-   // Change code below this line
-  const newArrey = [];
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   const newArrey = [];
 
-  for (const number of numbers) {
-    if (number > value) {
-      newArrey.push(number);
-    }
-  }
+//   for (const number of numbers) {
+//     if (number > value) {
+//       newArrey.push(number);
+//     }
+//   }
 
-  return newArrey;
-  // Change code above this line
-}
+//   return newArrey;
+//   // Change code above this line
+// }
 
-const res1 = filterArray([1, 2, 3, 4, 5], 3);
-console.log(res1);
+// const res1 = filterArray([1, 2, 3, 4, 5], 3);
+// console.log(res1);
 
-const res2 = filterArray([1, 2, 3, 4, 5], 4);
-console.log(res2);
+// const res2 = filterArray([1, 2, 3, 4, 5], 4);
+// console.log(res2);
 
-const res3 = filterArray([1, 2, 3, 4, 5], 5);
-console.log(res3);
+// const res3 = filterArray([1, 2, 3, 4, 5], 5);
+// console.log(res3);
 
-const res4 = filterArray([12, 24, 8, 41, 76], 38);
-console.log(res4);
+// const res4 = filterArray([12, 24, 8, 41, 76], 38);
+// console.log(res4);
 
-const res5 = filterArray([12, 24, 8, 41, 76], 20);
-console.log(res5);
+// const res5 = filterArray([12, 24, 8, 41, 76], 20);
+// console.log(res5);
+
+// home-work #25
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const newArrey = [];
+
+//   for (const number of array1) {
+
+//     if (array2.includes(number)) {
+//       newArrey.push(number);
+
+      
+//     }
+//   }
+//   return newArrey;
+//  // Change code above this line
+// }
+
+// const res1 = getCommonElements([1, 2, 3], [2, 4]);
+// console.log(res1);
+
+// const res2 = getCommonElements([1, 2, 3], [2, 1, 17, 19]);
+// console.log(res2);
+
+// const res3 = getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]);
+// console.log(res3);
+
+// const res4 = getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
+// console.log(res4);
+
+// const res5 = getCommonElements([1, 2, 3], [10, 20, 30]);
+// console.log(res5);
+
+// home-work #26
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   // for (let i = 0; i < order.length; i += 1) {
+//   //   total += order[i];
+//   // }
+
+//   for (const price of order) {
+//     total += price;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+// home-work #27
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   const number = numbers[i];
+
+//   //   if (number > value) {
+//   //     filteredNumbers.push(number);
+//   //   }
+//   // }
+
+//   for (const number of numbers) {
+    
+//     if (number > value) {
+
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// home-work #27
+
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+//   const allNumber = [];
+//   for (let i = start; i <= end; i += 1) {
+    
+//     if (i % 2 === 0) {
+//       allNumber.push(i);
+//     }
+//   }
+
+
+//   return allNumber;
+//     // Change code above this line
+// }
+  
+// const res1 = getEvenNumbers(2, 5);
+// console.log(res1);
+
+// const res2 = getEvenNumbers(3, 11);
+// console.log(res2);
+
+// const res3 = getEvenNumbers(6, 12);
+// console.log(res3);
+
+// const res4 = getEvenNumbers(8, 8);
+// console.log(res4);
+
+// const res5 = getEvenNumbers(7, 7);
+// console.log(res5);
+
+// home-work #31
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   // let number;
+
+//   // for (let i = start; i < end; i += 1) {
+//   //   if (i % divisor === 0) {
+//   //     number = i;
+//   //     break;
+//   //   }
+//   // }
+
+//   // return number;
+//   for (let i = start; i <= end; i += 1) {
+
+//     if (i % divisor === 0) {
+//       return i;
+
+//     }
+//   }
+  
+//   // Change code above this line
+// }
+
+// const res1 = findNumber(2, 6, 5);
+// console.log(res1);
+
+// const res2 = findNumber(8, 17, 3);
+// console.log(res2);
+
+// const res3 = findNumber(6, 9, 4);
+// console.log(res3);
+
+// const res4 = findNumber(16, 35, 7);
+// console.log(res4);
+
+// home-work #32
+
+// function includes(array, value) {
+//   // Change code below this line
+//   for (const item of array) {
+//     if (item === value) {
+//       return true;
+//     }
+
+//   }
+
+//   return false;
+//   // Change code above this line
+// }
+
+// const res1 = includes([1, 2, 3, 4, 5], 3);
+// console.log(res1);
+
+// const res2 = includes([1, 2, 3, 4, 5], 17);
+// console.log(res2);
+
+// const res3 = includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter");
+// console.log(res3);
+
+// const res4 = includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus");
+// console.log(res4);
+
+// const res5 = includes(["apple", "plum", "pear", "orange"], "plum");
+// console.log(res5);
+
+// const res6 = includes(["apple", "plum", "pear", "orange"], "kiwi");
+// console.log(res6);
