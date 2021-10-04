@@ -348,32 +348,147 @@
 
 // home-work #18
 
-function calculateTotal(number) {
- // Change code below this line
-  let total = 0;
+// function calculateTotal(number) {
+//  // Change code below this line
+//   let total = 0;
 
-  for (let i = 0; i <= number; i += 1) {
-    total += i;
-    // console.log(total);
-    
+//   for (let i = 0; i <= number; i += 1) {
+//     total += i;
+//     // console.log(total);    
+//   }
+//   return total;
+
+
+//   // Change code above this line
+// }
+
+// const res1 = calculateTotal(1);
+// console.log(res1);
+
+// const res2 = calculateTotal(3);
+// console.log(res2);
+
+// const res3 = calculateTotal(7);
+// console.log(res3);
+
+// const res4 = calculateTotal(18);
+// console.log(res4);
+
+// const res5 = calculateTotal(24);
+// console.log(res5);
+
+// home-work #19
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// home-work #20
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+// const res1 = calculateTotalPrice([12, 85, 37, 4]);
+// console.log(res1);
+
+// const res2 = calculateTotalPrice([164, 48, 291]);
+// console.log(res2);
+
+// const res3 = calculateTotalPrice([412, 371, 94, 63, 176]);
+// console.log(res3);
+
+// home-work #21
+
+// function findLongestWord(string) {
+//   // Change code below this line
+//   let arrString = string.split(" ");
+//   let worldLength = 0;
+//   let longestWord;
+
+//   for (let i = 0; i < arrString.length; i += 1) {
+//     worldLength = arrString[1].length;
+//     console.log(worldLength);
+
+//     if (arrString[i].length > worldLength) {
+//       longestWord = arrString[i];
+      
+//       return longestWord;
+//     }
+
+//   }
+  
+//   // Change code above this line
+// }
+
+// const res1 = findLongestWord("The quick brown fox jumped over the lazy dog");
+// console.log(res1);
+
+// const res2 = findLongestWord("Google do a roll");
+// console.log(res2);
+
+// const res3 = findLongestWord("May the force be with you");
+// console.log(res3);
+
+// home-work #22
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     console.log(i);
+//     numbers.push(i);
+//   }
+
+//   // Change code above this line
+//   return numbers;
+// }
+
+// const res1 = createArrayOfNumbers(1, 3);
+// console.log(res1);
+
+// const res2 = createArrayOfNumbers(14, 17);
+// console.log(res2);
+
+// const res3 = createArrayOfNumbers(29, 34);
+// console.log(res3);
+
+// home-work #23
+function filterArray(numbers, value) {
+   // Change code below this line
+  const newArrey = [];
+
+  for (const number of numbers) {
+    if (number > value) {
+      newArrey.push(number);
+    }
   }
-  return total;
 
-
+  return newArrey;
   // Change code above this line
 }
 
-const res1 = calculateTotal(1);
+const res1 = filterArray([1, 2, 3, 4, 5], 3);
 console.log(res1);
 
-const res2 = calculateTotal(3);
+const res2 = filterArray([1, 2, 3, 4, 5], 4);
 console.log(res2);
 
-const res3 = calculateTotal(7);
+const res3 = filterArray([1, 2, 3, 4, 5], 5);
 console.log(res3);
 
-const res4 = calculateTotal(18);
+const res4 = filterArray([12, 24, 8, 41, 76], 38);
 console.log(res4);
 
-const res5 = calculateTotal(24);
+const res5 = filterArray([12, 24, 8, 41, 76], 20);
 console.log(res5);
