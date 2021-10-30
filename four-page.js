@@ -764,78 +764,78 @@ function leaveHoloMessage(name) {
 //   .sort((firstBook, secondBook) => firstBook.localeCompare(secondBook), 0);
 // console.log(names);
 
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    gender: "male",
-    age: 37,
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    gender: "female",
-    age: 34,
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    gender: "male",
-    age: 24,
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    gender: "female",
-    age: 21,
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
-    isActive: true,
-    balance: 3951,
-    gender: "male",
-    age: 27,
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman"],
-    isActive: false,
-    balance: 1498,
-    gender: "male",
-    age: 38,
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    gender: "female",
-    age: 39,
-  },
-];
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37,
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34,
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24,
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21,
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27,
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38,
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39,
+//   },
+// ];
 
 // home work #46
 // Change code below this line
@@ -876,3 +876,366 @@ const users = [
 // console.log(getTotalBalanceByGender(users, "male"));
 // getTotalBalanceByGender(users, "female");
 // console.log(getTotalBalanceByGender(users, "female"));
+
+// Петя бежит быстро, потому что Петя пытается поймать поезд.
+// const petya = {
+//   username: "Petya",
+//   showName() {
+//     console.log(this.username);
+//   },
+// };
+
+// petya.showName();
+
+// const bookShelf = {
+//   authors: ["Бернард Корнуэлл", "Роберт Шекли"],
+//   getAuthors() {
+//     return this.authors;
+//   },
+//   addAuthor(authorName) {
+//     this.authors.push(authorName);
+//   },
+// };
+
+// console.log(bookShelf.getAuthors()); // ["Бернард Корнуэлл", "Роберт Шекли"]
+// bookShelf.addAuthor("Ли Танит");
+// console.log(bookShelf.getAuthors()); // ["Бернард Корнуэлл", "Роберт Шекли", "Ли Танит"]
+
+// function foo() {
+//   console.log(this);
+// }
+
+// foo(); // window без "use strict" и undefined с "use strict"
+
+// const petya = {
+//   username: "Petya",
+//   showThis() {
+//     console.log(this);
+//   },
+//   showName() {
+//     console.log(this.username);
+//   },
+// };
+
+// petya.showThis(); // {username: "Petya", showThis: ƒ, showName: ƒ}
+// petya.showName(); // 'Petya'
+
+// function showThis() {
+//   console.log("this in showThis: ", this);
+// }
+
+// // Вызываем в глобальном контексте
+// showThis(); // this in showThis: Window
+
+// const user = {
+//   username: "Mango",
+// };
+
+// // Записываем ссылку на функцию в свойство объекта
+// // Обратите внимание, что это не вызов - нет ()
+// user.showContext = showThis;
+
+// // Вызываем функцию в контексте объекта
+// // this будет указывать на текущий объект, в контексте
+// // которого осуществляется вызов, а не на глобальный объект.
+// user.showContext(); // this in showThis: {username: "Mango", showContext: ƒ}
+
+// const customer = {
+//   firstName: "Jacob",
+//   lastName: "Mercer",
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
+
+// function makeMessage(callback) {
+//   // callback() это вызов метода getFullName без объекта
+//   console.log(`Обрабатываем заявку от ${callback()}.`);
+// }
+
+// makeMessage(customer.getFullName); // Будет ошибка при вызове функции
+
+// const showThis = () => {
+//   console.log("this in showThis: ", this);
+// };
+
+// showThis(); // this in showThis: window
+
+// const user = {
+//   username: "Mango",
+// };
+// user.showContext = showThis;
+
+// user.showContext(); // this in showThis: window
+
+// const hotel = {
+//   username: "Resort hotel",
+//   showThis() {
+//     const foo = () => {
+//       // Стрелки запоминают контекст во время объявления,
+//       // из родительской области видимости
+//       console.log("this in foo: ", this);
+//     };
+
+//     foo();
+//     console.log("this in showThis: ", this);
+//   },
+// };
+
+// hotel.showThis();
+// // this in foo: {username: 'Resort hotel', showThis: ƒ}
+// this in showThis: {username: 'Resort hotel',showThis: ƒ}
+
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}.`);
+// }
+
+// const mango = {
+//   username: "Манго",
+// };
+// const poly = {
+//   username: "Поли",
+// };
+
+// greetGuest.call(mango, "Добро пожаловать"); // Добро пожаловать, Манго.
+// greetGuest.call(poly, "С приездом"); // С приездом, Поли.
+
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}.`);
+// }
+
+// const mango = {
+//   username: "Манго",
+// };
+// const poly = {
+//   username: "Поли",
+// };
+
+// greetGuest.apply(mango, ["Добро пожаловать"]); // Добро пожаловать, Манго.
+// greetGuest.apply(poly, ["С приездом"]); // С приездом, Поли.
+
+// function greet(clientName) {
+//   return `${clientName}, добро пожаловать в «${this.service}».`;
+// }
+
+// const steam = {
+//   service: "Steam",
+// };
+
+// const steamGreeter = greet.bind(steam);
+// steamGreeter("Манго"); // "Манго, добро пожаловать в «Steam»."
+// console.log(steamGreeter("Манго"));
+
+// const gmail = {
+//   service: "Gmail",
+// };
+
+// const gmailGreeter = greet.bind(gmail);
+// gmailGreeter("Поли"); // "Поли, добро пожаловать в «Gmail»."
+// console.log(gmailGreeter("Поли"));
+
+// const customer = {
+//   firstName: "Jacob",
+//   lastName: "Mercer",
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
+
+// function makeMessage(callback) {
+//   // callback() это вызов метода getFullName без объекта
+//   console.log(`Обрабатываем заявку от ${callback()}.`);
+// }
+
+// makeMessage(customer.getFullName.bind(customer)); // Будет ошибка при вызове функции
+
+// const animal = {
+//   legs: 4,
+// };
+// const dog = Object.create(animal);
+// dog.name = "Манго";
+
+// console.log(dog); // { name: 'Манго', __proto__: animal }
+// console.log(animal.isPrototypeOf(dog)); // true
+
+// console.log(dog.hasOwnProperty("name")); // true
+// console.log(dog.name); // 'Манго'
+
+// console.log(dog.hasOwnProperty("legs")); // false
+// console.log(dog.legs); // 4
+
+// class User {
+//   // Тело класса
+//   constructor(name, email) {
+//     // Инициализация свойств экземпляра
+//     this.name = name;
+//     this.email = email;
+//   }
+// }
+
+// const mango = new User("Манго", "mango@mail.com");
+// console.log(mango); // {}
+
+// const poly = new User("Поли", "poly@mail.com");
+// console.log(poly); // {}
+
+// class User {
+//   constructor({ name, email }) {
+//     this.name = name;
+//     this.email = email;
+//   }
+
+//   // Метод getEmail
+//   getEmail() {
+//     return this.email;
+//   }
+
+//   // Метод changeEmail
+//   changeEmail(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class User {
+//   // Необязательное объявление публичных свойств
+//   name;
+//   // Обязательное объявление приватных свойств
+//   #email;
+
+//   constructor({ name, email }) {
+//     this.name = name;
+//     this.#email = email;
+//   }
+
+//   getEmail() {
+//     return this.#email;
+//   }
+
+//   changeEmail(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
+
+// const mango = new User({
+//   name: "Манго",
+//   email: "mango@mail.com",
+// });
+// mango.changeEmail("mango@supermail.com");
+// console.log(mango.getEmail()); // mango@supermail.com
+// console.log(mango.#email); // Будет ошибка, это приватное свойство
+
+// const hogvarts = {
+//   griffindor: [
+//     { name: "Harry", points: 15 },
+//     { name: "Hermiona", points: 16 },
+//     { name: "Ron", points: 14 },
+//   ],
+//   sliserin: [
+//     { name: "Draco", points: 25 },
+//     { name: "Goyl", points: 40 },
+//     { name: "Crabbe", points: 5 },
+//   ],
+
+//   isOnFacult(faculty) {
+//     const studentList = `${faculty}`.forEach((student) => {
+//       student.name;
+//       console.log(studentList);
+//     });
+//   },
+
+//   totalPoint() {
+//     const totalPoints = this.griffindor.reduce((total, item) => {
+//       return total + item.points;
+//     }, 0);
+
+//     console.log(totalPoints);
+//   },
+// };
+
+// hogvarts.totalPoint();
+// hogvarts.isOnFacult("griffindor");
+// hogvarts.isOnFacult("sliserin");
+
+// const horgvarts = {
+//   griffindor: [
+//     { name: "Harry", points: 15 },
+//     { name: "Hermiona", points: 16 },
+//     { name: "Ron", points: 14 },
+//   ],
+//   slizerin: [
+//     { name: "Goyl", points: 25 },
+//     { name: "Draco", points: 36 },
+//     { name: "Crabbe", points: 14 },
+//   ],
+
+//   isOnFaculty(faculty) {
+//     const keys = Object.keys(horgvarts);
+//     //console.log(keys)
+
+//     for (const key of keys) {
+//       if (key === faculty) {
+//         //console.log(key);
+//         const searchName = this[key];
+//         console.log(searchName);
+//         const fff = searchName.forEach((student) => console.log(student.name));
+//         //console.log(fff)
+//       }
+//     }
+//   },
+
+//   totalPoint() {
+//     const totalPoint = this.griffindor.reduce(
+//       (total, point) => total + point.points,
+//       0
+//     );
+//     //console.log(totalPoint);
+//   },
+// };
+
+// horgvarts.isOnFaculty("slizerin");
+// horgvarts.totalPoint("griffindor");
+
+// const hogvards = {
+//   griffindor: [
+//     { name: "Harry", points: 15 },
+//     { name: "Gerbiona", points: 16 },
+//     { name: "Ron", points: 14 },
+//   ],
+//   slizaring: [
+//     { name: "Draco", points: 25 },
+//     { name: "Goyl", points: 40 },
+//     { name: "Crabbe", points: 5 },
+//   ],
+
+//   isOnFacult(faculty) {
+//     console.log(this[faculty]);
+
+//     this[faculty].forEach((student) => console.log(student.name));
+
+//     // const keys = Object.keys(hogvards);
+//     // console.log(keys);
+
+//     // for (const key of keys) {
+//     //   if (key === faculty) {
+//     //     console.log(typeof (key));
+
+//     //     const searchName = this[key];
+//     //     console.log(searchName);
+
+//     //     const ru = searchName.map(student => student.name);
+//     //     return ru;
+
+//     // searchName.forEach(student => console.log(student.name));
+
+//     // }
+//     // }
+//   },
+
+//   totalPoint(faculty) {
+//     const totalPoints = this.griffindor.reduce((total, item) => {
+//       return total + item.points;
+//     }, 0);
+//   },
+// };
+
+// hogvards.isOn;
