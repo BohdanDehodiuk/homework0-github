@@ -642,3 +642,178 @@
 // console.log(mango.blacklistedEmails); // ["poly@mail.com"]
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
+// const listWithId = document.querySelector("#menu");
+// listWithId.style.textTransform = "uppercase";
+// listWithId.style.fontSize = "24px";
+// console.log(listWithId);
+
+// const listWithClass = document.querySelector(".menu");
+// console.log(listWithClass);
+
+// const menuItemsByTagName = document.querySelectorAll("li");
+// console.log(menuItemsByTagName);
+
+// const menuItemsByClass = document.querySelectorAll(".menu-item");
+// // menuItemsByClass.style.color = "red";
+// console.log(menuItemsByClass);
+
+// const firstMenuItem = document.querySelector(".menu-item");
+// firstMenuItem.style.color = "tomato";
+// console.log(firstMenuItem);
+// const button = document.querySelector(".my-button");
+
+// button.addEventListener("click", () => {
+//   console.log("Button was clicked");
+// });
+
+// const button = document.querySelector(".my-button");
+
+// const handleClick = () => {
+//   console.log("Button was clicked");
+// };
+
+// button.addEventListener("click", handleClick);
+
+// const singleBtn = document.querySelector("#single");
+
+// const handleClick = () => {
+//   console.log("click event listener callback");
+// };
+
+// singleBtn.addEventListener("click", handleClick);
+
+// // ===============================================
+// const multiBtn = document.querySelector("#multiple");
+
+// const firstCallback = () => {
+//   console.log("First callback!");
+// };
+// const secondCallback = () => {
+//   console.log("Second callback!");
+// };
+// const thirdCallback = () => {
+//   console.log("Third callback!");
+// };
+
+// multiBtn.addEventListener("click", firstCallback);
+// multiBtn.addEventListener("click", secondCallback);
+// multiBtn.addEventListener("click", thirdCallback);
+
+// const addListenerBtn = document.querySelector('[data-action="add"]');
+// const removeListenerBtn = document.querySelector('[data-action="remove"]');
+// const btn = document.querySelector("#btn");
+
+// const handleClick = () => {
+//   console.log("click event listener callback");
+// };
+
+// addListenerBtn.addEventListener("click", () => {
+//   btn.addEventListener("click", handleClick);
+//   console.log("click event listener was added to btn");
+// });
+
+// removeListenerBtn.addEventListener("click", () => {
+//   btn.removeEventListener("click", handleClick);
+//   console.log("click event listener was removed from btn");
+// });
+
+// const mango = {
+//   username: "Mango",
+//   showUsername() {
+//     console.log(this);
+//     console.log(`My username is: ${this.username}`);
+//   },
+// };
+
+// const btn = document.querySelector(".js-btn");
+
+// // ✅ Работает
+// mango.showUsername();
+// console.log(mango.showUsername());
+
+// // ❌ this будет ссылаться на button если использовать showUsername как callback
+// btn.addEventListener("click", mango.showUsername); // не работает
+// // console.log(btn.addEventListener("click", mango.showUsername));
+
+// // ✅ Не забывайте привязывать контекст методов объекта
+// btn.addEventListener("click", mango.showUsername.bind(mango));
+// console.log(btn.addEventListener("click", mango.showUsername.bind(mango)));
+
+// const button = document.querySelector(".btn");
+
+// const handleClick = (event) => {
+//   console.log("event: ", event);
+//   console.log("event type: ", event.type);
+//   console.log("currentTarget: ", event.currentTarget);
+// };
+
+// button.addEventListener("click", handleClick);
+
+// const form = document.querySelector(".register-form");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const {
+//     elements: { username, password },
+//   } = event.currentTarget;
+//   console.log(username.value, password.value);
+// });
+
+// document.addEventListener("keydown", (event) => {
+//   console.log("Keydown: ", event);
+// });
+
+// document.addEventListener("keyup", (event) => {
+//   console.log("Keyup: ", event);
+// });
+
+// const clearLogBtn = document.querySelector('[data-action="clear"]');
+// const logList = document.querySelector(".log-list");
+// let keypressCounter = 1;
+
+// document.addEventListener("keydown", logMessage);
+// document.addEventListener("keyup", logMessage);
+// clearLogBtn.addEventListener("click", reset);
+
+// function logMessage({ type, key, code }) {
+//   const markup = `<div class="log-item">
+//     <span class="chip">${keypressCounter}</span>
+//     <ul>1
+//       <li><b>Event</b>: ${type}</li>
+//       <li><b>Key</b>: ${key}</li>
+//       <li><b>Code</b>: ${code}</li>
+//     </ul>
+//   </div>`;
+
+//   logList.insertAdjacentHTML("afterbegin", markup);
+
+//   if (type === "keyup") {
+//     incrementKeypressCounter();
+//   }
+// }
+
+// function reset() {
+//   keypressCounter = 1;
+//   logList.innerHTML = "";
+// }
+
+// function incrementKeypressCounter() {
+//   keypressCounter += 1;
+// }
+
+// const select = document.querySelector(".pizza-select");
+// const textOutput = document.querySelector(".text-output");
+// const valueOutput = document.querySelector(".value-output");
+
+// setOutput();
+
+// select.addEventListener("change", setOutput);
+
+// function setOutput() {
+//   const selectedOptionValue = select.value;
+//   const selectedOptionIndex = select.selectedIndex;
+//   const selectedOptionText = select.options[selectedOptionIndex].text;
+
+//   textOutput.textContent = selectedOptionText;
+//   valueOutput.textContent = selectedOptionValue;
+// }
