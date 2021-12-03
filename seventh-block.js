@@ -182,35 +182,219 @@
 //   }, 300)
 // );
 
+// =========================================================================
 
-const galleryConteiner = document.querySelector(".gallery");
+// const galleryConteiner = document.querySelector(".gallery");
 
-const galleryMarkup = createImagesGalleryMarkup(galleryItems);
+// const galleryMarkup = createImagesGalleryMarkup(galleryItems);
 
-galleryConteiner.addEventListener("click", aoClickImageGallery);
+// galleryConteiner.addEventListener("click", aoClickImageGallery);
 
-galleryConteiner.insertAdjacentHTML("beforeend", galleryMarkup);
+// galleryConteiner.insertAdjacentHTML("beforeend", galleryMarkup);
 
-function createImagesGalleryMarkup(galleryItems) {
-  return galleryItems
-    .map(({ preview, original, description }) => {
-      return `
-            <a class="gallery__link" href="${original}">
-                <img
-                    class="gallery__image"
-                    src="${preview}"
-                    data-source="${original}"
-                    alt="${description}"
-                />
-            </a>`;
-    })
-    .join("");
-}
+// function createImagesGalleryMarkup(galleryItems) {
+//   return galleryItems
+//     .map(({ preview, original, description }) => {
+//       return `
+//             <a class="gallery__link" href="${original}">
+//                 <img
+//                     class="gallery__image"
+//                     src="${preview}"
+//                     data-source="${original}"
+//                     alt="${description}"
+//                 />
+//             </a>`;
+//     })
+//     .join("");
+// }
 
-function aoClickImageGallery(e) {
-  if (e.target.nodeName !== "IMG") {
-    return;
+// function aoClickImageGallery(e) {
+//   if (e.target.nodeName !== "IMG") {
+//     return;
+//   }
+//   e.preventDefault();
+//   console.log(e.target.dataset.source);
+// }
+
+// const li = document.querySelectorAll("#li");
+// console.log(li);
+// const ul = document.querySelector("#ul");
+// console.log(ul.children);
+
+// const liToArray = Array.from(li);
+// console.log(liToArray);
+
+// function example(params);
+
+// example
+
+// const arrayNumber = [1, 5, 4, 7, 16];
+// const someNumbers = arrayNumber.filter((number) => {
+//   if (number % 2 === 0) {
+//     return number;
+//   }
+// });
+
+// localStorage.setItem("numbers", JSON.stringify(someNumbers));
+
+// let arr = localStorage.getItem("numbers");
+// arr = JSON.parse(arr);
+
+// // let sum = 0;
+// // arr.forEach((elem) => {
+// //     elem *= elem;
+// //     sum += elem;
+// // })
+// // console.log(sum)
+
+// const newArr = arr.reduce(
+//   (previousValue, number) => (previousValue += number *= number),
+//   0
+// );
+// localStorage.setItem("sum", JSON.stringify(newArr));
+// const arr = [
+//   {
+//     name: "card 1",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+//   {
+//     name: "card 2",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+//   {
+//     name: "card 3",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+//   {
+//     name: "card 4",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+//   {
+//     name: "card 5",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+//   {
+//     name: "card 6",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+//   {
+//     name: "card 7",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+//   {
+//     name: "card 8",
+//     lastUsed: new Date().getTime(),
+//     creationDate: new Date().getTime(),
+//   },
+// ];
+
+// console.log(arr);
+// const itemUl = document.getElementById("item");
+// const children = [...ulItem.itemUl];
+
+// const button = document.getElementById("sort");
+
+// function createMarkup(arr) {
+//   const arr.map(({ name }) => `<div><p>"${name}"</p></div>`).join("");
+// }
+
+// console.log(createNewDiv(arr));
+
+// const dog = {
+//   name: "Mango",
+//   age: 3,
+//   isHappy: true,
+//   bark() {
+//     console.log("Woof!");
+//   },
+// };
+
+// const dogJSON = JSON.stringify(dog);
+// console.log(dogJSON); // "{"name":"Mango","age":3,"isHappy":true}"
+
+// JSON.stringify(() => console.log("Well, this is awkward")); // undefined
+
+// const first = JSON.stringify(true);
+// console.log(first);
+
+// const notJson = JSON.parse(dogJSON);
+// console.log(notJson);
+
+// Script will crash during parse
+// const data = JSON.parse("Well, this is awkward");
+// console.log("❌ You won't see this log");
+
+// try {
+//   const data = JSON.parse("Well, this is awkward");
+// } catch (error) {
+//   console.log(error.name); // "SyntaxError"
+//   console.log(error.message); // Unexpected token W in JSON at position 0
+// }
+
+// console.log("✅ This is fine, we handled parse error in try...catch");
+
+// console.log("This message will not appear in the console");
+
+// cos value = 5;
+
+// const settings = {
+//   theme: "dark",
+//   isAuthenticated: true,
+//   options: [1, 2, 3],
+// };
+
+// console.log(settings);
+
+// localStorage.setItem("settings", JSON.stringify(settings));
+
+// const savedSettings = localStorage.getItem("settings");
+// const parsedSettings = JSON.parse(savedSettings);
+// console.log(parsedSettings); // settings object
+
+// localStorage.setItem("ui-theme", "light");
+// console.log(localStorage.getItem("ui-theme")); // "dark"
+
+// localStorage.removeItem("ui-theme");
+// console.log(localStorage.getItem("ui-theme")); // null
+
+localStorage.setItem("ui-theme", "light");
+localStorage.setItem("sidebar", "expanded");
+localStorage.setItem("notification-level", "mute");
+console.log(localStorage.getItem("ui-theme")); // "light"
+console.log(localStorage.getItem("sidebar")); // "expanded"
+console.log(localStorage.getItem("notification-level")); // "mute"
+
+localStorage.clear();
+console.log(localStorage.getItem("ui-theme")); // null
+console.log(localStorage.getItem("sidebar")); // null
+console.log(localStorage.getItem("notification-level")); // null
+
+const save = (key, value) => {
+  try {
+    const serializedState = JSON.stringify(value);
+    localStorage.setItem(key, serializedState);
+  } catch (error) {
+    console.error("Set state error: ", error.message);
   }
-  e.preventDefault();
-  console.log(e.target.dataset.source);
-}
+};
+
+const load = (key) => {
+  try {
+    const serializedState = localStorage.getItem(key);
+    return serializedState === null ? undefined : JSON.parse(serializedState);
+  } catch (error) {
+    console.error("Get state error: ", error.message);
+  }
+};
+
+// export default {
+//   save,
+//   load,
+// };

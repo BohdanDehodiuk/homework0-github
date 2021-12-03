@@ -1,5 +1,3 @@
-"use strict";
-
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   // Change code below this line
@@ -30,13 +28,13 @@
 //   if (ordered === 0) {
 //     return "Your order is empty!";
 //   }
-  
+
 //   if (ordered > available) {
 //     return "Your order is too large, not enough goods in stock!";
 //   }
-  
+
 //   return "The order is accepted, our manager will contact you";
-  
+
 // }
 
 // const res1 = checkStorage(100, 50);
@@ -127,7 +125,7 @@
 // function filterArray(numbers, value) {
 //   // Change code below this line
 //   let filter = [];
-  
+
 // for (const number of numbers) {
 //     numbers += number;
 //     if (number > value) {
@@ -163,7 +161,6 @@
 
 // const res5 = filterArray([12, 24, 8, 41, 76], 20);
 // console.log(res5);
-
 
 // function filterArray(numbers, value) {
 //   const newArr = [];
@@ -215,8 +212,6 @@
 
 //   return totalPrice;
 
-
-
 //    // Change code above this line
 // }
 
@@ -238,8 +233,6 @@
 //   let string;
 //   // Change code below this line
 //   string = array.join(delimeter);
-
-
 
 //   // Change code above this line
 //   return string;
@@ -302,7 +295,7 @@
 //   const creditsLeft = customerCredits - totalPrice;
 //  if ( totalPrice > customerCredits){
 //  message = "Insufficient funds!";
-   
+
 //  } else {
 //    message = `You ordered ${orderedQuantity} droids, you have ${creditsLeft} credits left`;
 //  }
@@ -323,11 +316,9 @@
 
 //   return newArrey;
 
-
-
 //     // Change code above this line
 // }
-  
+
 // const res1 = makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
 // console.log(res1);
 
@@ -354,10 +345,9 @@
 
 //   for (let i = 0; i <= number; i += 1) {
 //     total += i;
-//     // console.log(total);    
+//     // console.log(total);
 //   }
 //   return total;
-
 
 //   // Change code above this line
 // }
@@ -422,12 +412,12 @@
 
 //     if (arrString[i].length > worldLength) {
 //       longestWord = arrString[i];
-      
+
 //       return longestWord;
 //     }
 
 //   }
-  
+
 //   // Change code above this line
 // }
 
@@ -504,7 +494,6 @@
 //     if (array2.includes(number)) {
 //       newArrey.push(number);
 
-      
 //     }
 //   }
 //   return newArrey;
@@ -558,7 +547,7 @@
 //   // }
 
 //   for (const number of numbers) {
-    
+
 //     if (number > value) {
 
 //       filteredNumbers.push(number);
@@ -575,17 +564,16 @@
 //    // Change code below this line
 //   const allNumber = [];
 //   for (let i = start; i <= end; i += 1) {
-    
+
 //     if (i % 2 === 0) {
 //       allNumber.push(i);
 //     }
 //   }
 
-
 //   return allNumber;
 //     // Change code above this line
 // }
-  
+
 // const res1 = getEvenNumbers(2, 5);
 // console.log(res1);
 
@@ -622,7 +610,7 @@
 
 //     }
 //   }
-  
+
 //   // Change code above this line
 // }
 
@@ -670,3 +658,27 @@
 
 // const res6 = includes(["apple", "plum", "pear", "orange"], "kiwi");
 // console.log(res6);
+
+// index.js
+// const message = "NodeJS in amazing!";
+// console.log(message);
+
+// const validator = require("validator");
+
+// const validateEmail = (email) => {
+//   return validator.isEmail(email);
+// };
+
+// console.log(
+//   "Is mango@mail.com a valid email?: ",
+//   validateEmail("mango@mail.com")
+// );
+
+// console.log(
+//   "Is Mangozedog.com a valid email?: ",
+//   validateEmail("Mangozedog.com")
+// );
+// import { hello, goodbye } from "../greeter";
+
+// console.log(hello()); // "hello!"
+// console.log(goodbye()); // "goodbye!"

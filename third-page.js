@@ -74,7 +74,6 @@
 //   console.log(book[key]);
 // }
 
-
 // const bookShelf = {
 //   books: ["The Last Kingdom"],
 //   getBooks() {
@@ -121,31 +120,31 @@
 //   // console.log(book[key]);
 // }
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "На берегу спокойных вод",
-    author: "Роберт Шекли",
-    rating: 8.51,
-  },
-  {
-    title: "Сон смешного человека",
-    author: "Федор Достоевский",
-    rating: 7.75,
-  },
-];
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смешного человека",
+//     author: "Федор Достоевский",
+//     rating: 7.75,
+//   },
+// ];
 
-for (const book of books) {
-  // Объект книги
-  console.log(book);
-  // Название
-  console.log(book.title);
-  // Автор
-  console.log(book.author);
-  // Рейтинг
-  console.log(book.rating);
-}
+// for (const book of books) {
+//   // Объект книги
+//   console.log(book);
+//   // Название
+//   console.log(book.title);
+//   // Автор
+//   console.log(book.author);
+//   // Рейтинг
+//   console.log(book.rating);
+// }
